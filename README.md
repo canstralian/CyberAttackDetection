@@ -12,6 +12,12 @@ datasets:
 base_model:
 - WhiteRabbitNeo/WhiteRabbitNeo-33B-v1.5
 library_name: transformers
+metrics:
+- accuracy
+- code_eval
+- f1
+- precision
+- recall
 ---
 
 # CyberAttackDetection
