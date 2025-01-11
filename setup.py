@@ -1,0 +1,16 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='CyberAttackDetection',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        'transformers==4.33.3',
+        'torch==2.1.0'
+    ],
+    entry_points={
+        'console_scripts': [
+            # Add your console scripts here
+        ],
+    },
+)
