@@ -1,0 +1,10 @@
+{
+  "text": [
+    "A vulnerability was discovered in the server software.",
+    "An SQL injection attack was attempted on the web server.",
+    "The system is vulnerable to buffer overflow exploitation.",
+    "Regular server maintenance performed successfully.",
+    "The user input was sanitized to prevent command injection."
+  ],
+  "label": [1, 1, 1, 0, 0]
+}
