@@ -1,0 +1,17 @@
+{
+  "added_tokens": [],
+  "decoder_start_token_id": 0,
+  "do_lower_case": true,
+  "embedding_size": 768,
+  "max_len": 512,
+  "model_input_names": ["input_ids", "attention_mask"],
+  "pad_token_id": 0,
+  "special_tokens": {
+    "unk_token": "<unk>",
+    "pad_token": "<pad>",
+    "bos_token": "<bos>",
+    "eos_token": "<eos>"
+  },
+  "tokenizer_class": "BertTokenizer",
+  "vocab_size": 30522
+}
