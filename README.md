@@ -87,7 +87,23 @@ prediction = outputs.logits.argmax(dim=-1)
 print(f"Prediction: {'Attack' if prediction.item() == 1 else 'Non-Attack'}")
 ```
 
----
+## Prompts:
+- Open Ports: "Analyze the following network scan report and identify open ports and their associated vulnerabilities. Suggest best practices to secure these ports: [Insert network scan report]."
+- Outdated Software or Services: "Given this list of installed software and services, identify outdated versions and known vulnerabilities. Provide recommendations for updates or patches to mitigate risks: [Insert software and service list]."
+- Default Credentials: "Scan the following system configurations for any use of default credentials. Provide a list of affected services and recommendations for securing these credentials: [Insert system configuration details]."
+- Misconfigurations: "Evaluate the provided system configuration for potential misconfigurations. Highlight risks and provide recommendations for secure setup: [Insert system configuration details]."
+- Injection Flaws: "Review the given web application code or request logs and identify potential injection vulnerabilities such as SQL injection, command injection, or XSS. Provide remediation steps: [Insert code or logs]."
+- Unencrypted Services: "Analyze the following network configuration and identify services that are transmitting data without encryption. Suggest strategies to enforce secure transmission: [Insert network configuration details]."
+- Known Software Vulnerabilities: "Review the provided software inventory and cross-reference it with known vulnerabilities in the National Vulnerability Database (NVD). Recommend patches or workarounds: [Insert software inventory]."
+- Cross-Site Request Forgery (CSRF): "Examine the provided web application code for potential CSRF vulnerabilities. Suggest specific coding or configuration techniques to prevent these attacks: [Insert code]."
+- Insecure Direct Object References (IDOR): "Analyze the provided API endpoints and their associated access controls. Identify any IDOR vulnerabilities and suggest secure implementation strategies: [Insert API endpoint details]."
+- Security Misconfigurations in Web Servers/Applications: "Assess the given web server configuration for security misconfigurations, such as improper HTTP headers or verbose error messages. Recommend changes to harden the server: [Insert server configuration]."
+- Broken Authentication and Session Management: "Review the provided authentication and session management implementation. Identify weaknesses and recommend strategies to prevent compromise: [Insert authentication/session management details]."
+- Sensitive Data Exposure: "Analyze the system's data handling processes and storage practices to identify potential sensitive data exposure. Recommend measures to protect sensitive information: [Insert system details]."
+- API Vulnerabilities: "Examine the following API documentation and implementation for vulnerabilities, including insecure endpoints and data leakage. Provide recommendations for securing the API: [Insert API documentation]."
+- Denial of Service (DoS) Vulnerabilities: "Review the system's architecture and configuration for potential vulnerabilities to DoS attacks. Suggest mitigation strategies such as rate limiting and load balancing: [Insert system architecture]."
+- Buffer Overflows: "Analyze the provided code or application for buffer overflow vulnerabilities. Highlight potential weak points and recommend secure coding practices to prevent exploitation: [Insert code]."
+
 
 ## Model Training Details
 
